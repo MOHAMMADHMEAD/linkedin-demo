@@ -15,9 +15,9 @@
           <div class="time text-sm text-slate-500">5 h. <i class="fa fa-globe"></i></div>
         </div>
       </div>
-      <nuxt-link :to="`/post/${post.id}`" class="text-sm mt-3">
+      <a :href="`/post/${post.id}`" class="text-sm mt-3">
         {{ post.body }}
-      </nuxt-link>
+      </a>
       <div class="flex justify-end w-full border-b mt-3">
         <span class="text-sm text-slate-500 mb-3">{{ totalComments }} comment</span>
       </div>
